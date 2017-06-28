@@ -8,7 +8,7 @@
 		    margin: 0;
 		    padding: 0;
 		}
-		ul, li {
+		ul {
 		    list-style: none;
 		}
 		a {
@@ -24,129 +24,247 @@
 		    width: 960px;
 		    margin:  0 auto;
 		    font-size: 12px;
-		    background: #000 url("../images/bg.gif") repeat-x scroll 0 -720px;
+		    background: #000 url("./images/bg.gif") repeat-x scroll 0 -720px;
 		    position: relative;
 		    color: #666;
 		}
-		#header {
-			width: 960px;
-			height: 89px;
-			background: url(../images/global.gif) no-repeat 0 0;
-		}
-		.header-left {
-			width: 169px;
-    		height: 89px;
-    		/*background: yellowgreen;*/
-    		float: left;
-		}
-		.header-right {
-			width: 790px;
-			height: 89px;
 
+		/*头部样式*/
+		#header {
+		    width: 960px;
+		    height: 89px;
+		    background: url(./images/global.gif) no-repeat 0 0;
+		}
+		#header .logo {
+		    width: 169px;
+		    height: 89px;
+		    /*background: yellowgreen;*/
+		    float: left;
+		}
+		#header .logo a {
+		    width: 169px;
+		    height: 89px;
+		    display: block;
+		    text-indent: -9999px;
+		}
+		#header .login {
+		    width: 272px;
+		    height: 19px;
+		    /*background: olive;*/
+		    float: left;
+		    line-height: 19px;
+		    padding: 4px;
+		}
+		#header .login input.text {
+		    border: 1px solid #878787;
+		    height: 17px;
+		    width: 70px;
+		}
+		#header .login input.button {
+		    background: url(../images/global.gif) no-repeat -300px -100px;
+		    border: medium none;
+		    color: #504f4f;
+		    cursor: pointer;
+		    height: 19px;
+		    width: 49px;
+		}
+		#header .lead {
+		    background: url(../images/global.gif) no-repeat 444px -101px;
+		    color: #666;
+		    float: left;
+		    height: 27px;
+		    line-height: 27px;
+		    text-align: right;
+		    width: 503px;
+		}
+		#header .lead a {
+		    color: #666;
+		}
+		#header .supnav {
+		    width: 791px;
+		    height: 32px;
+		    /*background: lightslategrey;*/
+		    float: left;
+		}
+		#header .supnav ul {
+		    height: 32px;
+		    line-height: 32px;
+		}
+		#header .supnav ul li {
+		    float: left;
+		    width: 73px;
+		    text-align: center;
+		    background: url(../images/global.gif) no-repeat right -96px;
+		}
+		#header .supnav ul li.index {
+		    width: 61px;
+		}
+		#header .supnav ul li a {
+		    display: block;
+		    color: #fff;
+		    font-weight: bold;
+		}
+		#header .supnav ul li a:hover {
+		    background: url(../images/global.gif) no-repeat -380px -100px;
+		}
+		#header .subnav {
+		    width: 791px;
+		    height: 27px;
+		    /*background: orange;*/
+		    float: left;
+		}
+		#header .subnav ul {
+		    height: 27px;
+		    line-height: 27px;
+		    padding-left: 10px;
+		}
+		#header .subnav ul li {
+		    float: left;
+		    width: 85px;
+		    text-align: center;
+		}
+		#header .subnav ul li a {
+		    display: block;
+		    color: #fff;
+		}
+		#header .supnav ul li a:hover {
+		    color: #fff;
+		}
+
+		/*wrap样式*/
+		#wrap{
+			width: 960px;
+			height:164px;
+		}
+		#wrap img{
+			/*display: block;*/
 			float: left;
 		}
-		.header-right .right-top {
-			width: 100%;
-			height: 27px;
+
+		/*nav样式*/
+		#nav{
+			position: relative;
+			width: 960px;
+			height: 69px;
+			/*border-top: 1px dotted #fff; */
+			background: #000 url(./images/bg.gif) repeat-x scroll 0 -720px;
 		}
-		.right-top .login{
-			float: left;
-		}
-		.login .username  {
-			width: 72px;
-			height: 19px;
-		}
-		.login .password  {
-			widht: 72px;
-			height: 19px;
-		}
-		.right-top .info-list {
+		#nav img {
 			float: right;
+			width: 201px;
+			height: 50px;
+
 		}
-		.info-list li {
-			float: left;
-			height: 27px;
-			line-height: 27px;
-		}
-		.header-right .right-mid {
-			width: 100%;
+		.top {
+			float: right;
+			width: 756px;
 			
-			height: 32px;
-			line-height: 32px;
-			color: #fff;
+			display: block;
 		}
-		.header-right li  {
+		.top li {
+			height: 25px;
+			line-height: 25px;
 			float: left;
+			padding: 0 2px;
 		}
-		.header-right li a{
-			color: #fff;
-		}
-		.header-right .right-bottom {
-			width: 100%;
-			height: 27px;
-			line-height: 27px;
-		}
-		.header-right li {
+		.bottom li {
 			float: left;
+			height: 25px;
 		}
-		.header-right li a{
-			
-			color: #fff;
+		.bottom {
+			float: right;
+			width: 744px;
+			display: block;
 		}
 	</style>
 </head>
 <body>
-	<header id="header">
-		<div class="header-left">
-			<img src="" alt="太平洋游戏网">
-		</div>
-		<div class="header-right">
-			<div class="right-top">
-				<div class="login">
-					<input type="text" class="username">
-					<input type="text" class="passerword">
-					<button class="login-btn">登录</button>
-					<button class="res-btn">注册</button>	
-				</div>
-				<ul class="info-list">
-					<li><a href="#">太平洋电脑网|</a></li>
-					<li><a href="#">太平洋汽车网|</a></li>
-					<li><a href="#"> 太平洋女性网|</a></li>
-					<li><a href="#"> 太平洋亲子网|</a></li>
-					<li><a href="#">PC购物网|</a></li>
-					<li><a href="#">网站地图</a></li>
-				</ul>		
-			</div>
-			<div class="right-mid">
-				<ul>
-				<li><a href="#">首页</a></li>
-				<li><a href="#">新游试玩</a></li>
-				<li><a href="#">网络游戏</a></li>
-				<li><a href="#">电脑游戏</a></li>
-				<li><a href="#">电视游戏</a></li>
-				<li><a href="#">电子竞技</a></li>
-				<li><a href="#">网页游戏</a></li>
-				<li><a href="#">游戏硬件</a></li>
-				<li><a href="#">在线动漫</a></li>
-				<li><a href="#">游戏下载</a></li>
-				<li><a href="#">网络活动</a></li>
-				</ul>
-			</div>
-			<div class="right-bottom">
-				<ul>
-					<li><a href="#">美眉频道</a></li>
-					<li><a href="#">游戏视频</a></li>
-					<li><a href="#">美女图库</a></li>
-					<li><a href="#">j客部落</a></li>
-					<li><a href="#">公会联盟</a></li>
-					<li><a href="#">互动联盟</a></li>
-					<li><a href="#">查找游戏</a></li>
-					<li><a href="#">游戏产业</a></li>
-					<li><a href="#">迷你游戏</a></li>
-				</ul>
-			</div>
-		</div>
-
-</header>
+	<div id="header">
+    	<div class="logo"><a href="###">太平洋游戏网</a></div>
+	    <div class="login">
+	        <input class="text" type="text"/>
+	        <input class="text" type="password"/>
+	        <input class="button" type="button" value="登陆"/>
+	        <input class="button" type="button" value="注册"/>
+	    </div>
+	    <div class="lead">
+	        <a href="#">太平洋电脑网</a>|
+	        <a href="#">太平洋汽车网</a>|
+	        <a href="#">太平洋女性网</a>|
+	        <a href="#">太平洋亲子网</a>|
+	        <a href="#">PC购物网</a>
+	        <a>　 </a>
+	        <a href="#">网站地图</a>
+	    </div>
+	    <div class="supnav">
+	        <ul>
+	            <li class="index"><a href="#">首页</a></li>
+	            <li><a href="#">新游试玩</a></li>
+	            <li><a href="#">网络游戏</a></li>
+	            <li><a href="#">电脑游戏</a></li>
+	            <li><a href="#">电视游戏</a></li>
+	            <li><a href="#">电子竞技</a></li>
+	            <li><a href="#">网页游戏</a></li>
+	            <li><a href="#">游戏硬件</a></li>
+	            <li><a href="#">在线动漫</a></li>
+	            <li><a href="#">游戏下载</a></li>
+	            <li><a href="#">网站活动</a></li>
+	        </ul>
+	    </div>
+	    <div class="subnav">
+	        <ul>
+	            <li><a href="#">美眉频道</a></li>
+	            <li><a href="#">游戏视频</a></li>
+	            <li><a href="#">美女图库</a></li>
+	            <li><a href="#">J客部落</a></li>
+	            <li><a href="#">公会联盟</a></li>
+	            <li><a href="#">互动社区</a></li>
+	            <li><a href="#">查找游戏</a></li>
+	            <li><a href="#">游戏产业</a></li>
+	            <li><a href="#">迷你游戏</a></li>
+	        </ul>
+	    </div>
+	</div>
+	<div id="wrap">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_2.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_3.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_4.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_5.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_6.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_7.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_8.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_9.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_10.jpg">
+		<img alt="跑跑卡丁车宣传图"src="images/paopao_11.jpg">
+	</div>
+	<div id="nav">
+		<img src="images/paopao_13.jpg" alt="">
+		<ul class="top">
+			<li><a href="#">跑跑卡丁车</a></li>
+			<li><a href="#">游戏下载</a></li>
+			<li><a href="#">游戏介绍</a></li>
+			<li><a href="#">游戏驾考</a></li>
+			<li><a href="#"赛车评测</a></li>
+			<li><a href="#">赛道攻略</a></li>
+			<li><a href="#">竞速经验</a></li>
+			<li><a href="#">道具经验</a></li>
+			<li><a href="#">游戏技巧</a></li>
+			<li><a href="#">视频下载</a></li>
+			<li><a href="#">壁纸素材</a></li>
+		</ul>
+		<ul class="bottom">
+			<li><a href="#">收藏本站</a></li>
+			<li><a href="#">视频中心</a></li>
+			<li><a href="#">火爆论坛</a></li>
+			<li><a href="#">每周更新</a></li>
+			<li><a href="#">每日话题</a></li>
+			<li><a href="#">原创专栏</a></li>
+			<li><a href="#">竞技资讯</a></li>
+			<li><a href="#">在线交流</a></li>
+			<li><a href="#">美女明星</a></li>
+			<li><a href="#">官方新闻</a></li>
+			<li><a href="#">游戏八卦</a></li>
+		</ul>
+</div>
 </body>
-</html>>
+</html>
